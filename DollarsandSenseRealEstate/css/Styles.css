@@ -1,0 +1,70 @@
+﻿@import 'css/index.css';
+
+body {
+    margin-top: 0px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: White;
+}
+
+#mainheader {
+    height: 100px;
+    margin-top: 0%;
+    background-color: green;
+    color: orange;
+    text-align: center;
+}
+
+nav {
+    height: 60px;
+    width: 1000px;
+    margin: 0 auto 20px;
+    align-content: center;
+}
+
+#leftmenu {
+    float: left;
+    width: 30%;
+    margin-bottom: 20px;
+}
+
+.searchbox {
+    padding: 5px;
+    margin: 10px 10px;
+    width: 200px;
+}
+
+#main {
+    float: right;
+    width: 70%;
+    margin-bottom: 20px;
+}
+
+h1 {
+    float: center;
+    width: 100%;
+    color: orange
+}
+
+footer {
+    clear: both;
+    width: 100%;
+}
+
+
+header,
+section,
+footer,
+aside,
+nav,
+main,
+article,
+figure {
+    display: block;
+}
+
+#leftmenuul {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 40px;
+}
