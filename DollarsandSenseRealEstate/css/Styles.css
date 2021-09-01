@@ -1,31 +1,56 @@
-﻿@import 'css/index.css';
-
+﻿
 body {
     margin-top: 0px;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     margin-left: auto;
     margin-right: auto;
-    background-color: White;
+    background-color: slategray;
+   
 }
+
 
 #mainheader {
+    vertical-align: top;
+    display: inline-block;  
+    width: 100%;
     height: 100px;
-    margin-top: 0%;
-    background-color: green;
-    color: orange;
-    text-align: center;
+    background-color: Green;
+  
+}
+#mainbanner {
+    clear: both;
+    float: left;
+    padding: 0;
+    overflow:hidden;
 }
 
-nav {
-    height: 60px;
-    width: 1000px;
-    margin: 0 auto 20px;
-    align-content: center;
+#mainimage {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    width: 1800px;
+  }
+#bannerimagelogo {
+    list-style-type: none;
+    margin: 0;
+    padding: 0; 
+    overflow: hidden; 
+    float: right;
+    width:1800px;
+    margin-left: auto;
+    margin-right: auto;
 }
+
+
+nav > ul > li {
+    float: left;
+}
+
 
 #leftmenu {
     float: left;
-    width: 30%;
+    width: 20%;
     margin-bottom: 20px;
 }
 
@@ -43,7 +68,7 @@ nav {
 
 h1 {
     float: center;
-    width: 100%;
+    /* width: 100%; */
     color: orange
 }
 
