@@ -5,10 +5,7 @@ body {
     margin-left: auto;
     margin-right: auto;
     background-color: slategray;
-   
 }
-
-
 #mainheader {
     vertical-align: top;
     display: inline-block;  
@@ -41,17 +38,14 @@ body {
     margin-left: auto;
     margin-right: auto;
 }
-
-
 nav > ul > li {
     float: left;
 }
-
-
 #leftmenu {
     float: left;
     width: 20%;
     margin-bottom: 20px;
+    list-style:none;
 }
 
 .searchbox {
