@@ -1,83 +1,147 @@
 <!DOCTYPE html>
 
 <html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+
 <head>
     <meta charset="utf-8" />
     <title>Welcome to Dollars and Sense Real Estate Services</title>
-    <meta name="author" content="Adam Johnson"/>
-    <meta name="description" content="Website for Dollars and Sense Real Estate"/>
-    <meta name="viewport" content="width=device-width, initial-scale=1"/>
-    <link rel="icon" type="images/png" href="images/favicon.png"/>
+    <meta name="author" content="Adam Johnson" />
+    <meta name="description" content="Website for Dollars and Sense Real Estate" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="icon" type="images/png" href="images/favicon.png" />
     <link href="https://fonts.googleapis.com/css2?family=Cookie&family=Lato:ital@0;1&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/styles.css"/>
-    <link rel="javascript" href="js/site.js"/>
+    <link rel="stylesheet" href="sass/styles.css" />
+    <link rel="javascript" href="js/site.js" />
     <!--[if lt IE 9]>
         <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
     <![endif]-->
     <style>
-       
-        </style>
+
+    </style>
 </head>
+
 <body>
-<header id="mainheader">
+    <header>
 
-    <section id="mainbannerhome" >
-        <div><a href="index.html"><img src="images/logo.png" width=100 height="100" ; /></a></div>
-    </section>   
+        <div>
+            <div class="row">
+                <Section>
+                    <a href="index.html"><img src="images/logo.png" width="100em" height="100em" ; /></a>
+                </Section>
+                <section>
+                    <h1>Dollars and Sense</h1>
+                    <h2>Real Estate</h2>
+                </Section>
+            </div>
+    </header>
 
-    <section>
-        <div id="mainbanner">Dollars and Sense Real Estate </div>
-    </section>    
-
-    <section>
-         <div>
-            <nav>
-                <ul>
-                    <li><a href="services.html">Services</a></li>
-                    <li><a href="Data.html">Data</a></li>
-                    <li><a href="contactus.html">Contact Us</a></li>
-                    <li><a href="About.html">About</a></li>
-                </ul>
-            </nav>
-        </div>
-    </section>     
-
-</header>
-   <div id="maindiv">
-        <aside id="leftmenu">
-            <section>
-           <img src="images/logo.png" width="400" height="400" />
-            </section>
-            
-            <header>
-                <h4 style="text-align: center;font-size: 40px;color:orange">Browse our site</h4>
-            </header>
-            <ul id="menunav">
+    <nav>
+        <div>
+            <button id="hamburgerBtn">&#9776;</button>
+            <ul>
+                <li><a href="index.html">Home</a></li>
                 <li><a href="services.html">Services</a></li>
-                <li><a href="Data.html">Data</a></li>
-                <li><a href="currentinvestments.html">Current Investments</a></li>
-                <li><a href="Prospects.html">Prospects</a></li>
+                <li><a href="properties.html">Properties</a></li>
+                <li class="active"><a href="contactus.html">Contact Us</a></li>
+                <li><a href="About.html">About</a></li>
             </ul>
-            <input type="search" class="searchbox" placeholder="Search our store" />
-        </aside>
-        <main id="main">
-          
-           <!--  <section> <h3 style="font-family: Verdana;">Our weekly Shoutouts</h3>
-                <h4>Old Louisville</h4>
-               
-                <img src="images/OldLou.jpg" width="500" height="300"/>
-                <br>
-            </section> -->
+        </div>
+    </nav>
 
-        </main>
-        <footer>
-            <p>Our Address is <address>Dollars And Sense Real Estate - Louisville, Kentucy</address>
-            </p>
-            <small>&copy; 2021 Dollars and Sense Real Estate - All rights reserved</small>
-        </footer>
-   </div>
-    <script src="js/site.js"></script>
+    <main>
+
+        <section>
+            <div class="column small-12">
+                <h1>Contact Us</h1>
+                <p>Got a question about a property??</p>
+                <p> For customer support help or property questions, please call our Real Estate Mogul, Michael Jensen,
+                    at (123)-555-2345. Or send us a message via teh handy Contact form below!</p>
+            </div>
+        </section>
+
+        <section class="column">
+            <form method="get" action="Thanks.HTML">
+
+                <fieldset>
+                    <legend>Personal Information</legend>
+                    <label>First Name <span>(required)</span><input type="text" name="fname" required></label>
+
+                    <label>Last Name <span>(required)</span><input type="text" name="lname" required></label>
+
+                    <label>Phone <input type="tel" name="phone" placeholder="123-555-1234" required></label>
+
+                    <label>Email <span>(required)</span><input type="email" name="email" placeholder="someone@gmail.com"
+                            required></label>
+
+                    <label>website<input type="url" name="url" placeholder="http://"></label>
+
+
+
+                </fieldset>
+
+                <fieldset>
+                    <legend>Ask Your Question</legend>
+                    <label>Subject
+                        <select>
+                            <option value="">Please Select </option>
+                            <option value="Rentals">Rentals</option>
+                            <option value="Wholesale">Whole Sales</option>
+                            <option value="General">General</option>
+                        </select><span></span></label>
+                    <label>Your Question<textarea></textarea></label>
+
+                    <input type="submit" value="Ask My Question" class="submitBtn">
+
+                </fieldset>
+
+
+
+            </form>
+        </section>
+
+
+    </main>
+    <footer>
+        <div class="row limited">
+            <section class="column small-12 medium-6 large-3">
+                <h2>Location</h2>
+                <ul>
+                    <li>
+                        <address>Dollars And Sense Real Estate </address>
+                    </li>
+                    <li>Louisville, Kentucy</li>
+                </ul>
+            </section>
+
+            <section class="column small-12 medium-6 large-3">
+                <h2>Company</h2>
+                <ul>
+                    <li>Rentals</li>
+                    <li>Wholesaling</li>
+                    <li>Data</li>
+                </ul>
+            </section>
+
+            <section class="column small-12 medium-6 large-3">
+                <h2>Social</h2>
+                <ul>
+                    <li>Facebook</li>
+                    <li>Twitter</li>
+                    <li>Instagram</li>
+                </ul>
+            </section>
+
+            <section class="column small-12 medium-6 large-3">
+                <h2>About Us</h2>
+                <img src="images/logo.png" width="60em" height="60em" />
+                <p><small>&copy; 2021 &bull; Dollars and Sense Real Estate - All rights reserved</small></p>
+            </section>
+        </div>
+    </footer>
+
+    <script src="js/menuToggle.js"></script>
 </body>
+
 </html>
 
 <!--

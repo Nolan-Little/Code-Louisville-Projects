@@ -1,0 +1,22 @@
+.large-3 {
+    flex-basis:25%;
+}
+@for $i from 1 through 12 {
+    $w: ($i / 12) * 100%;
+    .large-#{$i} {flex-basis: $w;}
+} // END LOOP - creates classes for grid layouts
+
+nav ul{
+    margin-left:1vw;
+}
+nav li {
+    width:auto;
+}
+nav a {
+    padding: .7rem 1rem;
+}
+
+.service-main{
+    display:flex;
+  
+   }

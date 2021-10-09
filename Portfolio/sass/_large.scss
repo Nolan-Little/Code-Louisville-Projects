@@ -1,0 +1,43 @@
+@for $i from 1 through 12 {
+    $w: ($i / 12) * 100%;
+    .large-#{$i} {flex-basis: $w;}
+} // END LOOP
+
+
+
+Header {
+    min-height: 450px;
+}
+
+.nav {
+   display:flex;
+}
+
+.nav .name {
+    display:flex;
+    margin-right: 50em;
+    color: white;
+}
+
+.nav li {
+    padding: 5px 10px 10px 10px;
+}
+.nav li a {
+   width: 100%;
+   margin-right:103m;
+}
+
+main {
+    padding-top: 70px;
+}
+
+main p {
+    line-height: 1.6em;
+}
+
+.flex {
+    display: flex;
+    max-width: 1200px;
+    justify-content: space-around;
+    margin: 0 auto;
+}

@@ -1,0 +1,226 @@
+/* Global Layout Set-up */
+
+html {-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%;}
+
+* { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
+
+body {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    color: #222;
+    background: #f7f5f0;
+    font-size:16px;
+    font-weight: 300;
+    background: url("../images/backround.jpg" )repeat ;
+
+}
+
+  /* Section Styles */
+
+  @for $i from 1 through 12 {
+    $w: ($i / 12) * 100%;
+    .small-#{$i} {flex-basis: $w;}
+} // END LOOP
+
+.row{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+} /*Create row class for display*/
+
+.column{
+    padding: 0 2vw; 
+    margin: 0 0 .75rem 0;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+
+.limited{
+    max-width: 150em;
+    margin:auto;
+}
+
+
+
+/* Link Styles */
+
+a {
+    text-decoration: none;
+    color:red;
+  }
+  a:hover {
+    color: #6633ff;
+  }
+
+
+/*navigation styles */
+  
+.main-nav {
+    width: 100%;
+    background: black;
+    min-height: 3px;
+    padding-right: 100px;
+    position: fixed;
+    text-align: center;
+    margin-right:10em;
+    
+}
+
+.nav {
+    display: flex;
+    justify-content: flex-end;
+    font-weight: 700;
+    list-style-type: none;
+    margin: 0 auto;
+    padding: 0;
+}
+
+.nav .name{
+    display:none;
+    justify-content: flex-start;
+    
+}
+
+.nav li {
+    padding: 5px 10px 10px 10px;
+}
+
+.active{
+    background-color: rgba($color: red, $alpha: .3);
+    color:white;
+}
+
+.active a {
+    color:white;
+}
+
+.nav a {
+    transition: all .5s;
+
+        
+}
+
+.nav a:hover {
+    color: white;
+}
+
+nav ul.open {display: block;}
+nav ul {display: none;}
+
+/*Header Styles */
+
+.header-image {
+    text-align: center;
+    background: url("../images/chicago-skyline.jpg") no-repeat center center ;
+    background-size:cover;
+    overflow: hidden;
+    padding-top: 60px;
+  }
+  
+header {
+    line-height: 1.5;
+    min-height:30em;
+  }
+
+/* Profile Styles */
+
+.tag {
+    background-color:white;
+    color: black;
+    padding: 10px;
+    border-radius: 5px;
+    display: table;
+    margin: 10px auto;
+  } 
+
+.location {
+    background-color: #222;
+    color: white;
+  }
+
+.purpose {
+    background-color: black;
+    color: white;
+    font-size: 3rem;
+    border-radius:19%
+}
+
+.profile-image{
+    background-color: black;
+    color:white;
+    width: 15rem;
+    padding: 10px;
+    border-radius: 100%;
+    border-color: black;
+    border:3px solid white;
+    transition: all .5s;
+    margin-top:3em;
+}
+.profile-image:hover{
+    transform: scale(1.6) rotate(360deg);
+}
+
+
+/* Flexing Styles */
+
+.card {
+    margin: 30px;
+    padding: 20px 40px 40px;
+    max-width: 500px;
+    text-align: left;
+    background: white;
+    border-bottom: 4px solid #ccc;
+    border-radius: 6px;
+    color: black;
+    font:bolder
+}
+
+
+.card:hover {
+    border-color: black;
+}
+
+.goals{
+    background:black;
+    color:white;
+}
+
+.goals:hover {
+    border-color:red;
+    
+}
+
+ul.skills {
+    padding: 0;
+    text-align: center;
+  }
+  
+  .skills li {
+    border-radius: 6px;
+    display: inline-block;
+    background: red;
+    color: white;
+    padding: 5px 10px;
+    margin: 2px;
+  }
+  
+  .skills li:nth-child(odd) {
+    background: white;
+    color:black;
+    font-weight:bolder;
+  }
+
+footer{
+    display:flex;
+    align-items:flex-start;
+    background-color:black;
+    color:red;
+}
+
+.resume > li {
+    list-style:none;
+    align-items: center;
+};

@@ -1,0 +1,39 @@
+@for $i from 1 through 12 {
+    $w: ($i / 12) * 100%;
+
+    .medium-#{$i} {
+        flex-basis: $w;
+    }
+}
+
+#hamburgerBtn {
+    display: none;
+}
+
+nav ul{
+    display:flex;
+    flex-basis: 100%;
+    li{
+        flex-basis: 100%;
+    }
+}
+
+figure img {
+    width:50%
+}
+
+footer {
+    background-color: $primaryColor;
+    font-size: 1.6rem;
+    flex-direction: row;
+}
+
+footer section{
+    flex-direction: column;
+    width:100%;
+    flex-wrap: wrap;
+    div{
+    
+        width:100%
+    }
+}

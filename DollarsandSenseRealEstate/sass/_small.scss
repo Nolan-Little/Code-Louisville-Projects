@@ -1,0 +1,418 @@
+html {
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+}
+
+* {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+
+body {
+    background-image: url("images/backround.jpg");
+    margin-top: 0px;
+    font-family: 'Lato', sans-serif;
+    font-weight: 300;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: lightgray;
+    background-repeat: repeat;
+    display: flex;
+    flex-direction: column;
+    height: 100%
+}
+
+@for $i from 1 through 12 {
+    $w: ($i / 12) * 100%;
+
+    .small-#{$i} {
+        flex-basis: $w;
+    }
+}
+
+// END LOOP
+
+/* grid rules*/
+.row {
+
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: left;
+
+}
+
+.column {
+    padding: 0 3vw;
+    margin: 0 0 .75rem 0;
+    flex-wrap: wrap;
+    flex-direction: column
+}
+
+.small-12 {
+    flex-basis: 100%
+}
+
+.limited {
+    max-width: 150em;
+    margin: auto;
+}
+
+.mainimage {
+    max-width: 60em;
+    margin: auto;
+
+}
+
+.small-6 {
+    width: 50%
+}
+
+footer {
+    background-color: $primaryColor;
+    font-size: 1.6rem;
+}
+
+footer h2 {
+    font-family: sans-serif;
+    font-style: italic;
+    text-transform: uppercase;
+    margin: 1rem 0 .3rem 0;
+    color: $secondaryColor
+}
+
+/* Header Rules */
+header {
+    background-color: $primaryColor;
+    padding-left: 2em;
+
+}
+
+header>section {
+    flex-direction: row
+}
+
+header div {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: left;
+
+}
+
+header img {
+    //float: left;
+    height: 100px;
+    padding-right: 1rem;
+    padding-left: 0em;
+    flex-shrink: 1;
+
+}
+
+header h2,
+header h1 {
+    margin: 0;
+    color: $secondaryColor;
+    font-weight: 700;
+    font-style: italic;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+}
+
+header h1 {
+    padding: .5rem 0 0 0;
+    font-size: 2.45rem;
+}
+
+header h2 {
+    padding: .2rem 0 0 0;
+    font-size: 2.05rem;
+}
+
+/* CSS for Hamburger */
+button#hamburgerbtn {
+    background: none;
+    border: nonecolor #fff;
+    font-size: 2.4rem;
+    cursor: pointer;
+    padding: 0 30px 0 2vw;
+}
+
+/*CSS for Navigation*/
+
+nav {
+    background-color: $secondaryColor;
+}
+
+nav ul {
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    list-style-type: none;
+    color: $primaryColor;
+    display: flex;
+}
+
+nav a {
+    display: block;
+    padding: .8rem 0;
+    color: $primaryColor;
+    text-align: center;
+    text-decoration: none;
+}
+
+nav li.active {
+    background-color: rgba(161, 131, 87, 0.3);
+}
+
+nav a:hover {
+    background-color: rgba(219, 176, 126, 0.822);
+}
+
+nav ul.open {
+    display: block;
+}
+
+nav ul {
+    display: none;
+}
+
+main img {
+    width: 100%;
+    height: auto;
+    box-shadow: 20px 4px 12px black
+}
+
+/*main content*/
+main h1,
+main h3 {
+    color: $secondaryColor;
+    font-style: italic;
+    margin: .5rem 0 .1rem 2rem;
+}
+
+main {
+    h1 {
+        font-size: 3rem;
+        text-align: center;
+        color: $primaryColor
+    }
+
+    h3 {
+        font-size: 1.2rem;
+    }
+
+    p {
+        font-size: 1.2rem;
+        margin: 0 0 0rem 0;
+    }
+}
+
+.services {
+    text-align: center;
+    position: relative;
+    h1 {text-align: center;
+        padding: 0 0 2rem }
+    h2 {top: 0;
+        font-size: 2rem;
+        font-weight: 700;
+        color: $secondaryColor; }
+p {
+        bottom: 0;
+        font-weight: 300;
+        color: $secondaryColor;
+    }
+}
+    .services h2,
+    .services p {
+        position: absolute;
+        background-color: $primaryColor;
+        margin: 0;
+        width: 88%;
+        padding: .3rem 1rem;
+    }
+
+    .service-main {
+        display: none;
+        justify-content: space-between;
+        margin-left: 3%;
+        margin-right: 2.5%
+    }
+
+    .service-pre {
+        display: flex;
+        width: 50%;
+        flex-direction: row;
+        flex-wrap:wrap;
+        align-content: flex-start;
+        section:hover{
+            transform: scale(1.5);
+        }
+    }
+
+    .firstser {
+        width: 50%;
+        justify-content: left;
+
+    }
+
+    .secondser {
+        width: 50%;
+        justify-content: right;
+    }
+
+    .service-column {
+        width: 18.7%;
+        display:flex;
+        flex-direction: column;
+        background-color: $secondaryColor;
+        align-items: center;
+        align-content: flex-start;
+        font-size: small;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        border-radius: 10%;
+        margin: .1rem;
+        box-shadow: 0 2px 4px rgba(0,0, 0, 0.3);
+
+    }
+
+    .service-column img {
+        height: 10em;
+        width: 100.3%;
+        box-shadow: none;
+        border-radius: 10%;
+        display: flex;
+        
+    }
+    .service-column img:hover{
+        transform: scale(1.5);
+    }
+    .service-column h2 {
+        color: $primaryColor;
+        text-align: center;
+    }
+
+    .service-column p {
+        color: $primaryColor;
+        text-align: center;
+        font-size: 15px;
+    }
+
+    .service-column small {
+        text-align: center;
+        color:$primaryColor;
+        font-weight: 700;
+        font-size: larger;
+        margin: .7rem;
+    }
+
+    
+
+
+    .house-image {
+        background-color: black;
+        color: orange;
+        width: 25%;
+        padding: 10px;
+        border-radius: 10%;
+        border-color: green;
+        border: 3px solid white;
+        transition: all .5s;
+        text-align: left;
+        max-height:fit-content;
+    }
+    .house-image img{
+        max-height:200px;
+    }
+    .house-image:hover {
+        transform: scale(1.2);
+    }
+
+    .fig {
+
+        text-align: right;
+        padding: 1em 01em .6em 2em;
+        background-color: orange;
+        color: green;
+        font-weight: 700;
+
+
+    }
+.family {
+    text-align: center;
+}
+
+.family img {
+
+   padding: 1em 1em .5em 2em;
+   max-height:20em;
+   max-width: 10em;
+   border-radius: 20%;
+}
+
+.family img:hover {
+    transform: scale(2.3)
+}
+
+form {
+    margin: 1rem $gutter;
+    max-width:25rem;
+    fieldset{
+        border:1px solid lightgrey;
+        border-radius: .4rem;
+        padding: 0 $gutter;
+        margin: 2rem 0;
+        legend{
+            text-align: center;
+            color:$secondaryColor;
+            padding: 0 .4rem;
+        }
+    }
+    label {
+        display: block;
+        padding: .75rem 0;
+        span{
+            font-size:.75rem;
+            color:$secondaryColor
+        }
+        input,  textarea {
+            display:block;
+            font-size:1rem;
+            padding: .75rem;
+            background-color: lightgreen;
+            border: 1px solid black;
+            color: $primaryColor;
+            margin-top: .2rem;
+            width: 100%;
+        }
+        textarea {min-height: 13rem;}
+        input:required {border: 2px solid black;}
+        input:required:valid{border:green;}
+        input:focus, textarea:focus{background-color: #ddd}
+    }
+    input.submitBtn {
+        border:none;
+        background-color: $secondaryColor;
+        color:white;
+        font-size: 1.5rem;
+        font-weight: $normalWeight;
+        padding: .4rem;
+        border-radius:1rem;
+        width:100%;
+    }
+}
+    /* .services img {
+    width: 100%
+}
+
+.services rental {
+    background-color: $secondaryColor;
+    color: $primaryColor;
+    width: 50rem;
+    text-align: center;
+    border: 20rem solid $primaryColor;
+} */
