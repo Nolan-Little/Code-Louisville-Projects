@@ -1,4 +1,14 @@
 /*Create variables for primary and secondary colors */
+html {
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
 .small-1 {
   -ms-flex-preferred-size: 8.33333%;
       flex-basis: 8.33333%;
@@ -81,12 +91,17 @@ h1 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: LEFT;
-      -ms-flex-pack: LEFT;
-          justify-content: LEFT;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
 }
 
 .column {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -99,6 +114,17 @@ header h3 {
   font-weight: 300;
   font-style: italic;
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.head {
+  background-color: black;
+}
+
+.head .banner {
+  text-align: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .banner {
@@ -121,6 +147,9 @@ header h3 {
 /*Navigation Bar */
 .navbanner {
   background-color: orange;
+  width: 100%;
+  -ms-flex-preferred-size: 20%;
+      flex-basis: 20%;
 }
 
 #primaryNav {
@@ -153,6 +182,7 @@ nav li.active {
 
 nav a:hover {
   background-color: rgba(219, 176, 126, 0.822);
+  width: 100%;
 }
 
 nav ul.open {
@@ -220,6 +250,8 @@ footer {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 footer h2 {
@@ -238,6 +270,297 @@ footer section {
       -ms-flex: column;
           flex: column;
   padding: .1rem .5rem .5rem 1rem;
+}
+
+/*Services Page */
+.service-main {
+  background-color: orange;
+  text-align: center;
+  margin: 0rem 2rem 0rem 2em;
+  width: 50%;
+  padding: 0;
+  -webkit-box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+          box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.service-main h2 {
+  color: green;
+  font-size: 2rem;
+  font-weight: 700;
+  top: 0;
+}
+
+.service-main img {
+  width: 100%;
+  height: auto;
+  margin: 0;
+  padding: 0;
+}
+
+.sersec {
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  width: 100%;
+}
+
+.serpic {
+  width: 50%;
+  color: green;
+  text-align: center;
+  font-weight: bold;
+  display: none;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 0rem 2rem;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.serpic h2 {
+  margin: 0rem 0rem 0rem 0rem;
+}
+
+.serpic p {
+  font-size: 1.3rem;
+}
+
+.serpic small {
+  font-size: 1.6rem;
+}
+
+.serpic .row {
+  background-color: orange;
+  margin: .1em;
+  border-radius: 15%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.serpic img {
+  height: 7em;
+  width: 100.3%;
+  border-radius: 10%;
+  min-width: 239px;
+}
+
+.serpic img:hover {
+  -webkit-transform: scale(1.5);
+          transform: scale(1.5);
+}
+
+.serpic-2 {
+  -webkit-box-pack: right;
+      -ms-flex-pack: right;
+          justify-content: right;
+  -ms-flex-line-pack: right;
+      align-content: right;
+  margin-left: 1rem;
+  width: 50%;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+/*Properties Page */
+.topprop {
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin: 3rem 2rem 3rem 4rem;
+}
+
+.topprop div {
+  background-color: black;
+  border-radius: 10%;
+  margin: 1rem 1rem;
+  margin-bottom: 2rem;
+  -webkit-box-shadow: rgba(161, 131, 87, 0.3);
+          box-shadow: rgba(161, 131, 87, 0.3);
+}
+
+.topprop h2 {
+  color: orange;
+  font-size: 2rem;
+}
+
+.topprop p {
+  color: orange;
+  font-size: 2rem;
+}
+
+.topprop img {
+  max-width: 25rem;
+}
+
+.topprop img:hover {
+  -webkit-transform: scale(1.3);
+          transform: scale(1.3);
+}
+
+/*About Page*/
+.history {
+  color: orange;
+  font-size: larger;
+  margin: 1rem;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  background-color: black;
+  width: 48%;
+}
+
+.history h2,
+.history h3 {
+  color: green;
+  text-align: center;
+}
+
+.history p {
+  text-align: center;
+}
+
+.arti {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-preferred-size: 50%;
+      flex-basis: 50%;
+  width: 100%;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  min-width: 75%;
+}
+
+.team {
+  color: orange;
+  font-size: larger;
+  margin: 1rem;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  background-color: black;
+  width: 48%;
+}
+
+.team h2,
+.team h3 {
+  color: green;
+  text-align: left;
+}
+
+.team p {
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+/*Contact Us Page*/
+.set1 {
+  -ms-flex-preferred-size: 50%;
+      flex-basis: 50%;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+  width: 100%;
+}
+
+.set1 form fieldset {
+  border: 1px solid lightgrey;
+  border-radius: .4rem;
+  padding: 0 2rem;
+  margin: 2rem 8rem;
+}
+
+.set1 form fieldset legend {
+  text-align: center;
+  color: orange;
+  padding: 0 .4rem;
+}
+
+.set1 form label {
+  display: block;
+  padding: .75rem 0;
+}
+
+.set1 form label span {
+  font-size: .75rem;
+  color: orange;
+}
+
+.set1 form label input,
+.set1 form label textarea {
+  display: block;
+  font-size: 1rem;
+  padding: .75rem;
+  background-color: lightgreen;
+  border: 1px solid black;
+  color: green;
+  margin-top: .2rem;
+  width: 100%;
+}
+
+.set1 form label textarea {
+  min-height: 13rem;
+}
+
+.set1 form label input:required {
+  border: 2px solid black;
+}
+
+.set1 form label input:required:valid {
+  border: green;
+}
+
+.set1 form label input:focus,
+.set1 form label textarea:focus {
+  background-color: #ddd;
+}
+
+.set1 form input.submitBtn {
+  border: none;
+  background-color: orange;
+  color: white;
+  font-size: 1.5rem;
+  font-weight: 300;
+  padding: .4rem;
+  border-radius: 1rem;
+  width: 100%;
+}
+
+.mainsec {
+  -webkit-box-pack: space;
+      -ms-flex-pack: space;
+          justify-content: space;
+  width: 100%;
+}
+
+.mainsec .contact {
+  margin: 0rem;
+  padding: 0rem;
+}
+
+.mainsec p {
+  font-size: 2rem;
+  text-align: center;
+  font-weight: 700;
+}
+
+.mainsec h1 {
+  text-align: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 @media only screen and (min-width: 768px) {
@@ -296,12 +619,11 @@ footer section {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -ms-flex-preferred-size: 100%;
-        flex-basis: 100%;
+    width: 100%;
   }
   nav ul li {
-    -ms-flex-preferred-size: 100%;
-        flex-basis: 100%;
+    -ms-flex-preferred-size: 20%;
+        flex-basis: 20%;
   }
   figure img {
     width: 50%;
@@ -313,6 +635,8 @@ footer section {
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
   }
   footer section {
     -webkit-box-orient: vertical;
@@ -325,6 +649,18 @@ footer section {
   }
   footer section div {
     width: 100%;
+  }
+  .small-image {
+    display: inline-block;
+  }
+  .sersec {
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+  }
+  .serpic {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
   }
 }
 
@@ -381,12 +717,10 @@ footer section {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -ms-flex-preferred-size: 3;
-        flex-basis: 3;
   }
   nav ul li {
-    -ms-flex-preferred-size: 7em;
-        flex-basis: 7em;
+    -ms-flex-preferred-size: 8%;
+        flex-basis: 8%;
   }
 }
 /*# sourceMappingURL=styles.css.map */

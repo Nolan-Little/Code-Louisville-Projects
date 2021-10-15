@@ -1,3 +1,14 @@
+html {
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+}
+
+* {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
 //create flex grid layouts using loop
 @for $i from 1 through 12 {
     $w: ($i / 12) * 100%;
@@ -6,15 +17,16 @@
         flex-basis: $w;
     }
 }
+
 //Global CSS
 body {
-    background-image:url("images/backround.jpg");
-    margin:0;
+    background-image: url("images/backround.jpg");
+    margin: 0;
 
 }
 
 h1 {
-    color:$primaryColor;
+    color: $primaryColor;
     text-align: center;
     font-weight: bold;
     font-size: 3.4rem;
@@ -24,16 +36,18 @@ h1 {
 /* Main header section */
 //create main row and column classes for use throughout site
 .row {
-    flex-direction:column;
-    display:flex;
-    justify-content:LEFT;
- 
+    flex-direction: column;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+
 }
 
-.column{
-  
-    display:flex;
-  
+.column {
+    flex-direction: row;
+    display: flex;
+
+
 }
 
 header h4,
@@ -44,54 +58,75 @@ header h3 {
     font-style: italic;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
-.banner{
+
+.head {
+    background-color: black;
+
+    .banner {
+        text-align: center;
+        justify-content: center
+    }
+
+    ;
+}
+
+.banner {
     background-color: $primaryColor;
-    margin:0;
-    padding:0;
-    
-    a{
-        padding:.5rem .5REM 0REM 1REM;
+    margin: 0;
+    padding: 0;
+
+
+    a {
+        padding: .5rem .5REM 0REM 1REM;
         max-width: 10%;
 
     }
+
     .Title {
-        color:$secondaryColor;
+        color: $secondaryColor;
         font-size: 2.5rem;
         font-weight: bolder;
-     
-    
+
+
     }
 }
 
 /*Navigation Bar */
 
-.navbanner{
+.navbanner {
     background-color: $secondaryColor;
+    width: 100%;
+    flex-basis: 20%;
 }
 
 #primaryNav {
     flex-direction: row;
-    margin:0;
-    padding:0;
-        li{
-            list-style: none;
-            display: flex;
-            a{
-                color:$primaryColor;
-                display:block;
-                text-align: center;
-                padding:.5rem 1rem .5rem;
-                text-decoration:none;
-            }
+    margin: 0;
+    padding: 0;
+
+    li {
+        list-style: none;
+        display: flex;
+
+        a {
+            color: $primaryColor;
+            display: block;
+            text-align: center;
+            padding: .5rem 1rem .5rem;
+            text-decoration: none;
         }
+    }
 }
 
 nav li.active {
     background-color: rgba(161, 131, 87, 0.3);
+
 }
 
 nav a:hover {
     background-color: rgba(219, 176, 126, 0.822);
+    width: 100%;
+
 }
 
 nav ul.open {
@@ -113,35 +148,38 @@ button#hamburgerbtn {
 
 /*Main Area on Home*/
 
-.mainimage{
-    width:100%;
-    height:auto;
+.mainimage {
+    width: 100%;
+    height: auto;
     align-content: center;
     flex-wrap: wrap;
-    margin:0;
+    margin: 0;
     display: flex;
-   margin:auto;
-.fig
-{
-    background-color: $primaryColor;
-    text-align: right;
-    padding: .35rem;
-    color:$secondaryColor
-}
-    img{
+    margin: auto;
+
+    .fig {
+        background-color: $primaryColor;
+        text-align: right;
+        padding: .35rem;
+        color: $secondaryColor
+    }
+
+    img {
         box-shadow: 20px 4px 12px black;
-        margin:0;
-        
+        margin: 0;
+
     }
 }
 
-.main-text{
+.main-text {
     text-align: center;
-    h3{
-        color:$primaryColor;
+
+    h3 {
+        color: $primaryColor;
         font-weight: bold;
     }
-    P{
+
+    P {
         font-style: italic;
     }
 }
@@ -153,6 +191,7 @@ footer {
     background-color: $primaryColor;
     font-size: 1.6rem;
     flex-direction: column;
+    flex-wrap: wrap;
 
 }
 
@@ -164,9 +203,293 @@ footer h2 {
     color: $secondaryColor
 }
 
-footer section{
-    width:100%;
+footer section {
+    width: 100%;
     flex-wrap: wrap;
     flex: column;
-    padding:.1rem .5rem .5rem 1rem;
+    padding: .1rem .5rem .5rem 1rem;
 }
+
+
+/*Services Page */
+
+.service-main {
+    background-color: $secondaryColor;
+    text-align: center;
+    margin: 0rem 2rem 0rem 2em;
+    width: 50%;
+    padding: 0;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+
+    h2 {
+        color: $primaryColor;
+        font-size: 2rem;
+        font-weight: 700;
+        top: 0;
+
+
+    }
+
+    img {
+        width: 100%;
+        height: auto;
+        margin: 0;
+        padding: 0;
+       
+    }
+
+
+}
+
+.sersec {
+    flex-wrap: wrap;
+    width: 100%;
+
+}
+
+.serpic {
+    width: 50%;
+    color: $primaryColor;
+    text-align: center;
+    font-weight: bold;
+    display: none;
+    flex-wrap: wrap;
+    align-items: center;
+    margin: 0rem 2rem;
+    justify-content: space-around;
+
+    h2 {
+        margin: 0rem 0rem 0rem 0rem;
+    }
+
+    p {
+        font-size: 1.3rem;
+    }
+
+    small {
+        font-size: 1.6rem;
+    }
+
+
+    .row {
+        background-color: $secondaryColor;
+        margin: .1em;
+        border-radius: 15%;
+        display: flex;
+
+        ;
+    }
+
+    img {
+        height: 7em;
+        width: 100.3%;
+        border-radius: 10%;
+        min-width:239px;
+ 
+
+    }
+
+    img:hover {
+        transform: scale(1.5);
+    }
+}
+
+.serpic-2 {
+    justify-content: right;
+    align-content: right;
+    margin-left: 1rem;
+    width: 50%;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+/*Properties Page */
+
+.topprop {
+    text-align: center;
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    margin: 3rem 2rem 3rem 4rem;
+
+    div {
+        background-color: black;
+        border-radius: 10%;
+        margin: 1rem 1rem;
+        margin-bottom: 2rem;
+        box-shadow: rgba(161, 131, 87, 0.3);
+
+    }
+
+    h2 {
+        color: $secondaryColor;
+        font-size: 2rem;
+        ;
+    }
+
+    p {
+        color: $secondaryColor;
+        font-size: 2rem;
+    }
+
+    img {
+        max-width: 25rem;
+    }
+
+    img:hover {
+        transform: scale(1.3)
+    }
+}
+
+/*About Page*/
+
+
+.history {
+
+    color: $secondaryColor;
+    font-size: larger;
+    margin:1rem;
+    flex-wrap: wrap;
+background-color: black;
+    width:48%;
+
+    h2,
+    h3 {
+        color: $primaryColor;
+        text-align: center;
+    }
+
+    p {
+        text-align: center;
+
+        
+    }
+}
+
+.arti {
+    display: flex;
+    flex-basis: 50%;
+    width: 100%;
+    flex-wrap: wrap;
+    min-width: 75%;
+    
+}
+
+.team {
+
+    color: $secondaryColor;
+    font-size: larger;
+    margin: 1rem;
+    flex-wrap: wrap;
+background-color: black;
+    width:48%;
+
+    h2,
+    h3 {
+        color: $primaryColor;
+        text-align: left;
+
+    }
+
+    p {
+        text-align: center;
+        display:flex;
+        flex-wrap:wrap;
+    }
+}
+
+/*Contact Us Page*/
+.set1 {
+flex-basis:50%;
+flex-direction: row-reverse;
+width:100%;
+
+form {
+        fieldset {
+            border: 1px solid lightgrey;
+            border-radius: .4rem;
+            padding: 0 2rem;
+            margin: 2rem 8rem;
+
+            legend {
+                text-align: center;
+                color: $secondaryColor;
+                padding: 0 .4rem;
+            }
+        }
+
+        label {
+            display: block;
+            padding: .75rem 0;
+
+            span {
+                font-size: .75rem;
+                color: $secondaryColor
+            }
+
+            input,
+            textarea {
+                display: block;
+                font-size: 1rem;
+                padding: .75rem;
+                background-color: lightgreen;
+                border: 1px solid black;
+                color: $primaryColor;
+                margin-top: .2rem;
+                width: 100%;
+            }
+
+            textarea {
+                min-height: 13rem;
+            }
+
+            input:required {
+                border: 2px solid black;
+            }
+
+            input:required:valid {
+                border: green;
+            }
+
+            input:focus,
+            textarea:focus {
+                background-color: #ddd
+            }
+        }
+
+        input.submitBtn {
+            border: none;
+            background-color: $secondaryColor;
+            color: white;
+            font-size: 1.5rem;
+            font-weight: 300;
+            padding: .4rem;
+            border-radius: 1rem;
+            width: 100%;
+        }
+    }
+}
+
+.mainsec {
+    justify-content: space;
+    width: 100%;
+    .contact{
+        margin:0rem;
+        padding:0rem
+
+    }
+
+    p {
+        font-size: 2rem;
+   
+        text-align: center;
+        font-weight: 700;
+    }
+
+    h1 {
+        text-align: center;
+        justify-content: center;
+    }
+
+}
+

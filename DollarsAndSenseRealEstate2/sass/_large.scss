@@ -1,0 +1,36 @@
+@for $i from 1 through 12 {
+    $w: ($i / 12) * 100%;
+
+    .large-#{$i} {
+        flex-basis: $w;
+    }
+}
+
+nav{
+    max-width:100%
+}
+nav ul{
+    
+    width:100%;
+}
+nav li {
+    width:6%;
+    padding:.6em 0em 0em 0em;
+}
+nav a {
+    padding: .7rem 1rem;
+}
+
+.maincontainer{
+    min-height: 650px;
+}
+.servicerowcontainer {
+    
+
+    .row .house{
+        width: 50%;
+    }
+    
+    .row .lane{
+        width: 50%;
+    }}

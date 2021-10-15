@@ -416,3 +416,49 @@ form {
     text-align: center;
     border: 20rem solid $primaryColor;
 } */
+
+.test {
+    background-color: red;
+}
+
+.a {
+    width:100%;
+ 
+}
+.new-col{
+    flex-direction: column;
+    display:flex;
+    background-color: blue;
+    flex-wrap: wrap;
+    color:yellow;
+   
+    
+}
+
+.s{
+    padding: 10em;
+    margin:3m;
+    text-align: center;
+    flex-basis:12%;
+}
+ .new-row{
+    flex-direction:row;
+    display:flex;
+    background-color: red;
+    flex-wrap:wrap
+    
+
+    }
+
+.main-test{
+    background-color: red;
+    .prop-test{
+        background-color: blue;
+    }
+        .pic-test{
+            background-color: yellow;
+            img{
+                width:20%
+            }
+        }
+}

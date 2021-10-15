@@ -1,0 +1,93 @@
+@for $i from 1 through 12 {
+    $w: ($i / 12) * 100%;
+
+    .medium-#{$i} {
+        flex-basis: $w;
+    }
+}
+
+nav button{display:none;
+}
+nav ul {
+        display:flex;
+        width:100%;
+        flex-grow: 1;
+        
+
+}
+nav li {
+    width:100%;
+}
+
+nav a {padding:.8rem 3rem;}
+
+
+.maincontainer{
+    min-height:500px;
+    img{
+        min-width: 800px;
+        height:auto;
+    }
+}
+.servicerow1{
+    img{
+        min-width:0px;
+        width:100%;
+
+    }
+}
+
+
+
+.footercontain {
+    width: 100%;
+    margin: auto;
+    background-color: $primaryColor;
+    padding: 0;
+
+    h2 {
+        color: $secondaryColor;
+        font-size: 2.5em;
+        margin: .4em 0em .2em .4em;
+    }
+
+    .row {
+        width: 80%;
+        flex-basis: 20%;
+        padding: 0em;
+        margin: auto;
+    }
+
+    .col {
+        flex-wrap: wrap;
+        flex-basis: 20%;
+    }
+}
+.servicerowcontainer{
+    display:contents;
+}
+
+.servicerowcontainer {
+    
+
+    .row .house{
+        width: 100%;
+        img{
+            min-height:115px;
+        }
+    }
+    
+    .row .lane{
+        width: 100%;
+        img{
+            min-height:115px;
+        }
+    }}
+
+    .propertiescontainer{
+        img{
+                min-width:350px;
+                max-height:200px;
+                border-radius: 15%;
+        }
+    }

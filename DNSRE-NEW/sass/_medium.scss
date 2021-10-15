@@ -12,9 +12,10 @@
 
 nav ul{
     display:flex;
-    flex-basis: 100%;
+   width: 100%;
     li{
-        flex-basis: 100%;
+  
+        flex-basis:20%;
     }
 }
 
@@ -26,6 +27,7 @@ footer {
     background-color: $primaryColor;
     font-size: 1.6rem;
     flex-direction: row;
+    flex-wrap: nowrap;
 }
 
 footer section{
@@ -37,3 +39,14 @@ footer section{
         width:100%
     }
 }
+
+.small-image{
+    display:inline-block;
+}
+
+.sersec{
+    flex-wrap:nowrap;
+}
+
+
+.serpic{display:flex}
