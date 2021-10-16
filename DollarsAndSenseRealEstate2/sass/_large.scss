@@ -5,25 +5,32 @@
         flex-basis: $w;
     }
 }
-
+.navcontainer{
+    .row{
+      
+        flex-wrap:wrap;
+    
+    }
+}
 nav{
-    max-width:100%
+    max-width:100%;
+    margin:auto;
 }
 nav ul{
-    
-    width:100%;
+
+    width:40%;
+    max-width:600px;
+ 
 }
 nav li {
-    width:6%;
+    width:20%;
     padding:.6em 0em 0em 0em;
 }
 nav a {
     padding: .7rem 1rem;
 }
 
-.maincontainer{
-    min-height: 650px;
-}
+
 .servicerowcontainer {
     
 
@@ -33,4 +40,56 @@ nav a {
     
     .row .lane{
         width: 50%;
+    
     }}
+
+    .servicepics{
+      
+        width:50%;
+        .col{
+       
+            width:50%;
+            img{
+                min-width:50%;
+            }
+        }
+    }
+
+    .maincontainer {
+        width: 100%;
+        min-height:870px;
+        margin: auto;
+        justify-content: center;
+    }     
+.footercontain {
+    width: 100%;
+    
+    margin: auto;
+    background-color: $primaryColor;
+    padding: 0em;
+
+    h2 {
+        color: $secondaryColor;
+        font-size: 2.5em;
+        margin: 1.0em 0.5em .0em 1.5em;
+    }
+    .crcontainer{
+        width:25%;
+        
+    }
+
+    .row {
+        width: 75%;
+        padding: 0em;
+        margin: auto;
+     
+    }
+
+    .col {
+        flex-wrap: nowrap;
+        flex-basis:25%;
+        padding:0em 0em ;
+        
+       
+    }
+}

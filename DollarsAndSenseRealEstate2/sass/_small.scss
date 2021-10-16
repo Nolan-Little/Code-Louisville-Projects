@@ -29,7 +29,7 @@ body {
     display: flex;
     flex-direction: column;
     height: 100%;
-
+ 
 }
 
 h1 {
@@ -100,44 +100,35 @@ h1 {
 
 /*Nav CSS*/
 
-nav ul.open {
-    display: block;
-}
-
 .navcontainer {
     background-color: $secondaryColor;
     width: 100%;
 
-    ul {
-        margin: 0%;
-        padding: 0em 0em 0em 0em;
-        display: content;
 
-        li {
-            list-style: none;
-        }
 
-        li.active {
-            background-color: rgba($color: green, $alpha: .5);
-
-            a {
-                color: orange;
-            }
-        }
+    li {
+        list-style: none;
     }
 
-    a {
-        display: block;
-        color: $primaryColor;
-        font-weight: 700;
-        padding: .10em 0 .8em 0;
-        text-decoration: none;
-        text-align: center;
+    li.active {
+        background-color: rgba($color: green, $alpha: .4);
 
-        :hover {
-            background-color: red;
+        a {
+            color: orange;
         }
     }
+}
+
+a {
+    display: block;
+    color: $primaryColor;
+    font-weight: 700;
+    padding: .10em 0 .8em 0;
+    text-decoration: none;
+    text-align: center;
+
+
+
 
 }
 
@@ -145,15 +136,20 @@ nav ul.open {
     display: block;
 }
 
+nav ul {
+    margin: 0%;
+    padding: 0em 0em 0em 0em;
+    display: none;
+}
 
-nav a:hover {
-    background-color: $primaryColor;
+nav li:hover {
+    background-color: rgba($color: green, $alpha: .3);
     color: $secondaryColor;
 }
 
 .maincontainer {
     width: 100%;
-  
+   
     margin: auto;
     justify-content: center;
 
@@ -204,12 +200,18 @@ nav a:hover {
 }
 
 .indextagcontain {
-    width: 50%;
+    width: 90%;
     margin: auto;
 
     h3 {
-        font-size: 1.7em;
+        font-size: 2.7em;
         color: $secondaryColor;
+        margin:0;
+    }
+    p{
+        font-size: 1.7em;
+        width:50%;
+        margin:0;
     }
 
 }
@@ -227,29 +229,31 @@ nav a:hover {
     }
 
     .row {
-        width: 75%;
-        flex-basis: 100%;
+        width: 25%;
+
         padding: 0em;
         margin: auto;
     }
 
     .col {
         flex-wrap: wrap;
-        flex-basis: 25;
+        flex-basis: 25%;
     }
 }
 
 .footercontain ul {
     font-size: 1.6em;
     margin: 0em;
-    padding: auto;
+    padding: 1em;
     font-weight: 700;
 }
 
 .social {
-justify-content: center;
+    justify-content: center;
+    flex-direction:row;
     img {
         margin: .4em;
+      
     }
 
 }
@@ -262,34 +266,41 @@ justify-content: center;
 }
 
 .logofoot {
-    width: 10%;
-    margin: auto;
-
-
-}
-
-
-.copyright {
-    padding: 1em;
     width: 50%;
     margin: auto;
-    text-align: center;
+
+
 }
 
+.crcontainer{
+    width:50%;
+display:none;
+.copyright {
+    padding: 0em;
+    width: 20%;
+    text-align: center;
+    margin:0em;
+    
+}}
 .servicepics {
-    width: 100%;
-    min-height:30px;
+
+    width: 50%;
+    min-height: 30px;
 
     .col {
         flex-basis: 20%;
         margin: 1em auto;
         background-color: $secondaryColor;
         border-radius: 5%;
-        min-height:500px;
+        min-height: 500px;
+        flex-grow: .3;
     }
 
     img {
         border-radius: 7%;
+
+
+
 
     }
 
@@ -339,29 +350,33 @@ justify-content: center;
 
 .propertiescontainer {
     width: 20%;
-  
+
 
     .row {
         max-width: 13px;
-    
+
 
     }
 
     .col {
         background-color: black;
         border-radius: 10%;
-        margin:1.2em;
-        padding:1em;
+        margin: 1.2em;
+        padding: 1em;
 
     }
-    h3, h4, h6{
-        color:$primaryColor;
+
+    h3,
+    h4,
+    h6 {
+        color: $primaryColor;
         text-align: left;
         font-size: 1.5em;
         margin: .5em 0em 0em 1em;
     }
-    img:hover{
-        transform:scale(1.2);
-        transition:rotate(360);
+
+    img:hover {
+        transform: scale(1.2);
+        transition: rotate(360);
     }
 }

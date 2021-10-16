@@ -505,34 +505,24 @@ h1 {
 }
 
 /*Nav CSS*/
-nav ul.open {
-  display: block;
-}
-
 .navcontainer {
   background-color: orange;
   width: 100%;
 }
 
-.navcontainer ul {
-  margin: 0%;
-  padding: 0em 0em 0em 0em;
-  display: content;
-}
-
-.navcontainer ul li {
+.navcontainer li {
   list-style: none;
 }
 
-.navcontainer ul li.active {
-  background-color: rgba(0, 128, 0, 0.5);
+.navcontainer li.active {
+  background-color: rgba(0, 128, 0, 0.4);
 }
 
-.navcontainer ul li.active a {
+.navcontainer li.active a {
   color: orange;
 }
 
-.navcontainer a {
+a {
   display: block;
   color: green;
   font-weight: 700;
@@ -541,16 +531,18 @@ nav ul.open {
   text-align: center;
 }
 
-.navcontainer a :hover {
-  background-color: red;
-}
-
 nav ul.open {
   display: block;
 }
 
-nav a:hover {
-  background-color: green;
+nav ul {
+  margin: 0%;
+  padding: 0em 0em 0em 0em;
+  display: none;
+}
+
+nav li:hover {
+  background-color: rgba(0, 128, 0, 0.3);
   color: orange;
 }
 
@@ -603,13 +595,20 @@ nav a:hover {
 }
 
 .indextagcontain {
-  width: 50%;
+  width: 90%;
   margin: auto;
 }
 
 .indextagcontain h3 {
-  font-size: 1.7em;
+  font-size: 2.7em;
   color: orange;
+  margin: 0;
+}
+
+.indextagcontain p {
+  font-size: 1.7em;
+  width: 50%;
+  margin: 0;
 }
 
 .footercontain {
@@ -626,9 +625,7 @@ nav a:hover {
 }
 
 .footercontain .row {
-  width: 75%;
-  -ms-flex-preferred-size: 100%;
-      flex-basis: 100%;
+  width: 25%;
   padding: 0em;
   margin: auto;
 }
@@ -636,14 +633,14 @@ nav a:hover {
 .footercontain .col {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  -ms-flex-preferred-size: 25;
-      flex-basis: 25;
+  -ms-flex-preferred-size: 25%;
+      flex-basis: 25%;
 }
 
 .footercontain ul {
   font-size: 1.6em;
   margin: 0em;
-  padding: auto;
+  padding: 1em;
   font-weight: 700;
 }
 
@@ -651,6 +648,10 @@ nav a:hover {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
 }
 
 .social img {
@@ -663,19 +664,24 @@ nav a:hover {
 }
 
 .logofoot {
-  width: 10%;
+  width: 50%;
   margin: auto;
 }
 
-.copyright {
-  padding: 1em;
+.crcontainer {
   width: 50%;
-  margin: auto;
+  display: none;
+}
+
+.crcontainer .copyright {
+  padding: 0em;
+  width: 20%;
   text-align: center;
+  margin: 0em;
 }
 
 .servicepics {
-  width: 100%;
+  width: 50%;
   min-height: 30px;
 }
 
@@ -686,6 +692,9 @@ nav a:hover {
   background-color: orange;
   border-radius: 5%;
   min-height: 500px;
+  -webkit-box-flex: .3;
+      -ms-flex-positive: .3;
+          flex-grow: .3;
 }
 
 .servicepics img {
@@ -747,7 +756,9 @@ nav a:hover {
   padding: 1em;
 }
 
-.propertiescontainer h3, .propertiescontainer h4, .propertiescontainer h6 {
+.propertiescontainer h3,
+.propertiescontainer h4,
+.propertiescontainer h6 {
   color: green;
   text-align: left;
   font-size: 1.5em;
@@ -810,6 +821,13 @@ nav a:hover {
     -ms-flex-preferred-size: 100%;
         flex-basis: 100%;
   }
+  .navcontainer {
+    width: 100%;
+  }
+  .navcontainer .row {
+    width: 100%;
+    margin: auto;
+  }
   nav button {
     display: none;
   }
@@ -824,6 +842,8 @@ nav a:hover {
   }
   nav li {
     width: 100%;
+    padding: 0;
+    margin: 0;
   }
   nav a {
     padding: .8rem 3rem;
@@ -838,12 +858,13 @@ nav a:hover {
   .servicerow1 img {
     min-width: 0px;
     width: 100%;
+    max-height: 20%;
   }
   .footercontain {
     width: 100%;
     margin: auto;
     background-color: green;
-    padding: 0;
+    padding: 2em;
   }
   .footercontain h2 {
     color: orange;
@@ -851,17 +872,9 @@ nav a:hover {
     margin: .4em 0em .2em .4em;
   }
   .footercontain .row {
-    width: 80%;
-    -ms-flex-preferred-size: 20%;
-        flex-basis: 20%;
-    padding: 0em;
+    width: 50%;
+    padding: 2em;
     margin: auto;
-  }
-  .footercontain .col {
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-    -ms-flex-preferred-size: 20%;
-        flex-basis: 20%;
   }
   .servicerowcontainer {
     display: contents;
@@ -877,6 +890,12 @@ nav a:hover {
   }
   .servicerowcontainer .row .lane img {
     min-height: 115px;
+  }
+  .propertiescontainer {
+    max-width: 90%;
+    margin: auto;
+    -ms-flex-preferred-size: 20%;
+        flex-basis: 20%;
   }
   .propertiescontainer img {
     min-width: 350px;
@@ -934,27 +953,73 @@ nav a:hover {
     -ms-flex-preferred-size: 100%;
         flex-basis: 100%;
   }
+  .navcontainer .row {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
   nav {
     max-width: 100%;
+    margin: auto;
   }
   nav ul {
-    width: 100%;
+    width: 40%;
+    max-width: 600px;
   }
   nav li {
-    width: 6%;
+    width: 20%;
     padding: .6em 0em 0em 0em;
   }
   nav a {
     padding: .7rem 1rem;
-  }
-  .maincontainer {
-    min-height: 650px;
   }
   .servicerowcontainer .row .house {
     width: 50%;
   }
   .servicerowcontainer .row .lane {
     width: 50%;
+  }
+  .servicepics {
+    width: 50%;
+  }
+  .servicepics .col {
+    width: 50%;
+  }
+  .servicepics .col img {
+    min-width: 50%;
+  }
+  .maincontainer {
+    width: 100%;
+    min-height: 870px;
+    margin: auto;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .footercontain {
+    width: 100%;
+    margin: auto;
+    background-color: green;
+    padding: 0em;
+  }
+  .footercontain h2 {
+    color: orange;
+    font-size: 2.5em;
+    margin: 1.0em 0.5em .0em 1.5em;
+  }
+  .footercontain .crcontainer {
+    width: 25%;
+  }
+  .footercontain .row {
+    width: 75%;
+    padding: 0em;
+    margin: auto;
+  }
+  .footercontain .col {
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+    -ms-flex-preferred-size: 25%;
+        flex-basis: 25%;
+    padding: 0em 0em;
   }
 }
 /*# sourceMappingURL=styles..css.map */
