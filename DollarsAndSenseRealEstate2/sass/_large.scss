@@ -50,15 +50,15 @@ nav a {
        
             width:50%;
             img{
-                min-width:50%;
+                min-width:100%;
             }
         }
     }
 
     .maincontainer {
         width: 100%;
-        min-height:870px;
-        margin: auto;
+        min-height:100%;
+        margin:  auto;
         justify-content: center;
     }     
 .footercontain {
@@ -66,7 +66,9 @@ nav a {
     
     margin: auto;
     background-color: $primaryColor;
-    padding: 0em;
+    padding: 1em;
+    height:100%;
+    
 
     h2 {
         color: $secondaryColor;
@@ -91,5 +93,12 @@ nav a {
         padding:0em 0em ;
         
        
+    }
+}
+
+
+#thanks{
+    img{
+        max-width:7%;
     }
 }

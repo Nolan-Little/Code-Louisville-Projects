@@ -413,7 +413,7 @@ html {
 }
 
 body {
-  background-image: url("../images/backround.jpg");
+  background-image: url("../images/backround.jpg") no-repeat;
   margin-top: 0px;
   font-family: 'Lato', sans-serif;
   font-weight: 300;
@@ -429,6 +429,7 @@ body {
       -ms-flex-direction: column;
           flex-direction: column;
   height: 100%;
+  padding: 0;
 }
 
 h1 {
@@ -546,6 +547,7 @@ nav li:hover {
   color: orange;
 }
 
+/*Main Section CSS */
 .maincontainer {
   width: 100%;
   margin: auto;
@@ -569,7 +571,7 @@ nav li:hover {
 }
 
 .maincontainer img {
-  min-width: 350px;
+  min-width: 500px;
   height: auto;
   margin: 0;
   padding: 0;
@@ -611,11 +613,14 @@ nav li:hover {
   margin: 0;
 }
 
+/*Footer CSS */
 .footercontain {
   width: 100%;
-  margin: auto;
+  margin: 0;
   background-color: green;
-  padding: 0;
+  padding: 10%;
+  height: 100%;
+  bottom: 0;
 }
 
 .footercontain h2 {
@@ -670,16 +675,17 @@ nav li:hover {
 
 .crcontainer {
   width: 50%;
-  display: none;
+  min-width: 90px;
+  max-width: 1000px;
 }
 
 .crcontainer .copyright {
   padding: 0em;
-  width: 20%;
+  width: 100%;
   text-align: center;
-  margin: 0em;
 }
 
+/*Service Page */
 .servicepics {
   width: 50%;
   min-height: 30px;
@@ -692,6 +698,7 @@ nav li:hover {
   background-color: orange;
   border-radius: 5%;
   min-height: 500px;
+  min-width: 500px;
   -webkit-box-flex: .3;
       -ms-flex-positive: .3;
           flex-grow: .3;
@@ -720,7 +727,7 @@ nav li:hover {
 }
 
 .servicerowcontainer .row .house {
-  width: 50%;
+  width: 100%;
 }
 
 .servicerowcontainer .row .lane {
@@ -760,16 +767,169 @@ nav li:hover {
 .propertiescontainer h4,
 .propertiescontainer h6 {
   color: green;
-  text-align: left;
-  font-size: 1.5em;
+  text-align: center;
+  padding: 0em 0em 1em;
+  font-size: 2.5em;
   margin: .5em 0em 0em 1em;
 }
 
-.propertiescontainer img:hover {
-  -webkit-transform: scale(1.2);
-          transform: scale(1.2);
-  -webkit-transition: rotate(360);
-  transition: rotate(360);
+/*Contact Us Page*/
+.set1 {
+  -ms-flex-preferred-size: 50%;
+      flex-basis: 50%;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+  width: 100%;
+  max-width: 1000px;
+}
+
+.set1 form fieldset {
+  border: 1px solid lightgrey;
+  border-radius: .4rem;
+  padding: 0 2rem;
+  margin: 2rem 8rem;
+}
+
+.set1 form fieldset legend {
+  text-align: center;
+  color: orange;
+  padding: 0 .4rem;
+}
+
+.set1 form label {
+  display: block;
+  padding: .75rem 0;
+}
+
+.set1 form label span {
+  font-size: .75rem;
+  color: orange;
+}
+
+.set1 form label input,
+.set1 form label textarea {
+  display: block;
+  font-size: 1rem;
+  padding: .75rem;
+  background-color: lightgreen;
+  border: 1px solid black;
+  color: green;
+  margin-top: .2rem;
+  width: 100%;
+}
+
+.set1 form label textarea {
+  min-height: 13rem;
+}
+
+.set1 form label input:required {
+  border: 2px solid black;
+}
+
+.set1 form label input:required:valid {
+  border: green;
+}
+
+.set1 form label input:focus,
+.set1 form label textarea:focus {
+  background-color: #ddd;
+}
+
+.set1 form input.submitBtn {
+  border: none;
+  background-color: orange;
+  color: white;
+  font-size: 1.5rem;
+  font-weight: 300;
+  padding: .4rem;
+  border-radius: 1rem;
+  width: 100%;
+}
+
+/*About Page*/
+.history {
+  color: orange;
+  font-size: larger;
+  margin: 1rem;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  background-color: black;
+  width: 48%;
+}
+
+.history h2,
+.history h3 {
+  color: green;
+  text-align: center;
+}
+
+.history p {
+  text-align: center;
+}
+
+.team {
+  color: orange;
+  font-size: larger;
+  margin: 1rem;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  background-color: black;
+  width: 48%;
+}
+
+.team h2,
+.team h3 {
+  color: green;
+  text-align: left;
+}
+
+.team p {
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.arti {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-preferred-size: 50%;
+      flex-basis: 50%;
+  width: 100%;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  min-width: 75%;
+}
+
+/*Thanks Page */
+.thanks {
+  background-image: url("../images/chicago.jpg");
+}
+
+#thanks {
+  background-image: url("../images/chicago.jpg") no-repeat;
+  margin: 0;
+}
+
+#thanks h1 {
+  color: green;
+  text-align: center;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: 900%;
+}
+
+#thanks img {
+  max-width: 7px;
+  margin: 0;
+}
+
+#thanksimg {
+  max-width: 7px;
 }
 
 @media only screen and (min-width: 768px) {
@@ -852,13 +1012,13 @@ nav li:hover {
     min-height: 500px;
   }
   .maincontainer img {
-    min-width: 800px;
+    max-width: 20%;
     height: auto;
   }
   .servicerow1 img {
     min-width: 0px;
     width: 100%;
-    max-height: 20%;
+    max-height: 80%;
   }
   .footercontain {
     width: 100%;
@@ -885,11 +1045,23 @@ nav li:hover {
   .servicerowcontainer .row .house img {
     min-height: 115px;
   }
+  .servicerowcontainer .row .house img:hover {
+    -webkit-transition: all .5s;
+    transition: all .5s;
+    -webkit-transform: rotate(360deg) scale(3.6);
+            transform: rotate(360deg) scale(3.6);
+  }
   .servicerowcontainer .row .lane {
     width: 100%;
   }
   .servicerowcontainer .row .lane img {
     min-height: 115px;
+  }
+  .servicerowcontainer .row .lane img:hover {
+    -webkit-transition: all .5s;
+    transition: all .5s;
+    -webkit-transform: rotate(360deg) scale(3.6);
+            transform: rotate(360deg) scale(3.6);
   }
   .propertiescontainer {
     max-width: 90%;
@@ -901,6 +1073,49 @@ nav li:hover {
     min-width: 350px;
     max-height: 200px;
     border-radius: 15%;
+  }
+  .propertiescontainer img:hover {
+    -webkit-transition: all .5s;
+    transition: all .5s;
+    -webkit-transform: rotate(360deg) scale(1.6);
+            transform: rotate(360deg) scale(1.6);
+  }
+  .servicepics {
+    width: 50%;
+    min-height: 30px;
+  }
+  .servicepics .col {
+    -ms-flex-preferred-size: 20%;
+        flex-basis: 20%;
+    margin: 1em auto;
+    background-color: orange;
+    border-radius: 5%;
+    min-height: 500px;
+    min-width: 800px;
+    -webkit-box-flex: .3;
+        -ms-flex-positive: .3;
+            flex-grow: .3;
+  }
+  .servicepics img {
+    border-radius: 7%;
+  }
+  .servicepics h3,
+  .servicepics p {
+    color: green;
+    padding: 0em 0em 0em 0rem;
+    font-size: 3em;
+    margin: .1em;
+    padding: 0;
+    text-align: center;
+  }
+  .servicepics p {
+    font-size: 2em;
+  }
+  #thanks h1 {
+    font-size: 2000%;
+  }
+  #thanks img {
+    max-width: 7px;
   }
 }
 
@@ -985,11 +1200,11 @@ nav li:hover {
     width: 50%;
   }
   .servicepics .col img {
-    min-width: 50%;
+    min-width: 100%;
   }
   .maincontainer {
     width: 100%;
-    min-height: 870px;
+    min-height: 100%;
     margin: auto;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
@@ -999,7 +1214,8 @@ nav li:hover {
     width: 100%;
     margin: auto;
     background-color: green;
-    padding: 0em;
+    padding: 1em;
+    height: 100%;
   }
   .footercontain h2 {
     color: orange;
@@ -1020,6 +1236,9 @@ nav li:hover {
     -ms-flex-preferred-size: 25%;
         flex-basis: 25%;
     padding: 0em 0em;
+  }
+  #thanks img {
+    max-width: 7%;
   }
 }
 /*# sourceMappingURL=styles..css.map */

@@ -37,7 +37,7 @@ nav a {padding:.8rem 3rem;}
 .maincontainer{
     min-height:500px;
     img{
-        min-width: 800px;
+        max-width: 20%;
         height:auto;
     }
 }
@@ -45,7 +45,7 @@ nav a {padding:.8rem 3rem;}
     img{
         min-width:0px;
         width:100%;
-        max-height:20%;
+        max-height:80%;
 
     }
 }
@@ -82,12 +82,22 @@ nav a {padding:.8rem 3rem;}
         img{
             min-height:115px;
         }
+        img:hover {
+            transition: all .5s;
+           transform:  rotate(360deg) scale(3.6);
+          // transform:rotate(320deg);
+        }
     }
     
     .row .lane{
         width: 100%;
         img{
             min-height:115px;
+        }
+        img:hover {
+            transition: all .5s;
+           transform:  rotate(360deg) scale(3.6);
+          // transform:rotate(320deg);
         }
     }}
 
@@ -101,6 +111,59 @@ nav a {padding:.8rem 3rem;}
                 border-radius: 15%;
                 
         }
+        img:hover {
+            transition: all .5s;
+           transform:  rotate(360deg) scale(1.6);
+          // transform:rotate(320deg);
+        }
     }
 
-   
+    .servicepics {
+
+        width: 50%;
+        min-height: 30px;
+    
+        .col {
+            flex-basis: 20%;
+            margin: 1em auto;
+            background-color: $secondaryColor;
+            border-radius: 5%;
+            min-height: 500px;
+            min-width: 800px;
+            flex-grow: .3;
+        }
+    
+        img {
+            border-radius: 7%;
+    
+    
+    
+    
+        }
+       
+    
+    
+        h3,
+        p {
+            color: $primaryColor;
+            padding: 0em 0em 0em 0rem;
+            font-size: 3em;
+            margin: .1em;
+            padding: 0;
+            text-align: center;
+        }
+    
+        p {
+            font-size: 2em;
+        }
+    }
+    
+
+    #thanks{
+        h1{
+            font-size:2000%;
+        }
+        img{
+            max-width:7px;
+        }
+    }
