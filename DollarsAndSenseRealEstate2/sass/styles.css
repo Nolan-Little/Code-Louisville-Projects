@@ -565,6 +565,7 @@ nav li:hover {
 
 .maincontainer .row {
   width: 100%;
+  text-align: center;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -585,6 +586,17 @@ nav li:hover {
   background-color: orange;
   color: green;
   font-weight: 700;
+}
+
+.maincontainer .col {
+  text-align: center;
+}
+
+.maincontainer .col img {
+  max-width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 .indextag h2 {
@@ -626,7 +638,7 @@ nav li:hover {
 .footercontain h2 {
   color: orange;
   font-size: 2.5em;
-  margin: .4em 0em .2em .4em;
+  margin: .4em 0em .2em .40em;
 }
 
 .footercontain .row {
@@ -644,7 +656,7 @@ nav li:hover {
 
 .footercontain ul {
   font-size: 1.6em;
-  margin: 0em;
+  margin: 0em 2em;
   padding: 1em;
   font-weight: 700;
 }
@@ -659,8 +671,22 @@ nav li:hover {
           flex-direction: row;
 }
 
+.social a {
+  margin: 0;
+  max-width: 60px;
+  padding: 0;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
 .social img {
   margin: .4em;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 .aboutus {
@@ -746,6 +772,7 @@ nav li:hover {
 
 .servicerowcontainer img {
   border-radius: 10%;
+  min-width: 100%;
 }
 
 .propertiescontainer {
@@ -1008,13 +1035,6 @@ nav li:hover {
   nav a {
     padding: .8rem 3rem;
   }
-  .maincontainer {
-    min-height: 500px;
-  }
-  .maincontainer img {
-    max-width: 20%;
-    height: auto;
-  }
   .servicerow1 img {
     min-width: 0px;
     width: 100%;
@@ -1043,7 +1063,8 @@ nav li:hover {
     width: 100%;
   }
   .servicerowcontainer .row .house img {
-    min-height: 115px;
+    min-height: 200px;
+    min-width: 100%;
   }
   .servicerowcontainer .row .house img:hover {
     -webkit-transition: all .5s;
@@ -1055,7 +1076,8 @@ nav li:hover {
     width: 100%;
   }
   .servicerowcontainer .row .lane img {
-    min-height: 115px;
+    min-height: 200px;
+    min-width: 100%;
   }
   .servicerowcontainer .row .lane img:hover {
     -webkit-transition: all .5s;
@@ -1201,14 +1223,6 @@ nav li:hover {
   }
   .servicepics .col img {
     min-width: 100%;
-  }
-  .maincontainer {
-    width: 100%;
-    min-height: 100%;
-    margin: auto;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
   }
   .footercontain {
     width: 100%;

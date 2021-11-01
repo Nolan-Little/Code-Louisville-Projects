@@ -166,7 +166,7 @@ nav li:hover {
     .row {
 
         width: 100%;
-
+        text-align:center;
         justify-content: center;
     }
 
@@ -188,8 +188,19 @@ nav li:hover {
 
 
     }
+    .col{
+
+        text-align:center;
+        
+        img{
+            max-width:100%;
+            display:flex;
+        }
+    }
+    
 
 }
+
 
 .indextag {
     h2 {
@@ -233,7 +244,7 @@ nav li:hover {
     h2 {
         color: $secondaryColor;
         font-size: 2.5em;
-        margin: .4em 0em .2em .4em;
+        margin: .4em 0em .2em .40em;
     }
 
     .row {
@@ -249,9 +260,12 @@ nav li:hover {
     }
 }
 
+
+
+
 .footercontain ul {
     font-size: 1.6em;
-    margin: 0em;
+    margin: 0em 2em;
     padding: 1em;
     font-weight: 700;
 }
@@ -259,8 +273,16 @@ nav li:hover {
 .social {
     justify-content: center;
     flex-direction:row;
+    a{
+    
+        margin:0;
+        max-width:60px;
+        padding:0;
+        flex-direction:row;
+    }
     img {
         margin: .4em;
+        flex-direction: column;
       
     }
 
@@ -289,9 +311,8 @@ nav li:hover {
     padding: 0em;
     width: 100%;
     text-align: center;
-  
-    
-}}
+      }
+}
 
 /*Service Page */
 
@@ -354,6 +375,7 @@ nav li:hover {
 
     img {
         border-radius: 10%;
+        min-width:100%;
    
    
     }

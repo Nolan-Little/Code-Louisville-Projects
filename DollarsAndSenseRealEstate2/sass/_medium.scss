@@ -34,13 +34,7 @@ nav li {
 nav a {padding:.8rem 3rem;}
 
 
-.maincontainer{
-    min-height:500px;
-    img{
-        max-width: 20%;
-        height:auto;
-    }
-}
+
 .servicerow1{
     img{
         min-width:0px;
@@ -80,7 +74,8 @@ nav a {padding:.8rem 3rem;}
     .row .house{
         width: 100%;
         img{
-            min-height:115px;
+            min-height:200px;;
+            min-width:100%;
         }
         img:hover {
             transition: all .5s;
@@ -92,7 +87,8 @@ nav a {padding:.8rem 3rem;}
     .row .lane{
         width: 100%;
         img{
-            min-height:115px;
+            min-height:200px;
+            min-width:100%;
         }
         img:hover {
             transition: all .5s;
