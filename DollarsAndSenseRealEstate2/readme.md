@@ -4,9 +4,9 @@ The website that I created is for a fake real estate company.  I decided to do 5
 
 ### CSS Features
 
-​	I created a navigation menu  that collapses down as the page get smaller.  When I get to a certain small size, which is for mobile, the menu will transform into a hamburger button to control the menu navigation.
+I created a navigation menu  that collapses down as the page get smaller.  When I get to a certain small size, which is for mobile, the menu will transform into a hamburger button to control the menu navigation.
 
-​	The elements within the website are set up with Flexboxes that will wrap text and images as the screen size is manipulated. 
+The elements within the website are set up with Flexboxes that will wrap text and images as the screen size is manipulated. 
 
 I created a CSS animation on the services and properties pages that will have the images spin when they are hovered over.
 
@@ -15,3 +15,8 @@ I created a CSS animation on the services and properties pages that will have th
 I created a form on the Contact Us page.  This is a simple form which collects general information and a paragraph output.  Once the form is committed, you are taken to a THANK YOU page.  The information is not saved in a database or anything of that nature.
 
 I also created a button for the navigation when viewing in mobile screen size that will show/hide the navigation buttons.
+
+### Media Query
+
+I decided to create 3 different media query CSS files.  The small file holds most of the CSS code as I designed for mobile first.  The medium size is for devices such as IPADS or other tablets.  The large CSS file is for desktop monitors and such.
+
