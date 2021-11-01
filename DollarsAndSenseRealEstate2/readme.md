@@ -1,6 +1,6 @@
 # Website Summarization
 
-<!--The website that I created is for a fake real estate company.  I decided to do 5 different pages that will showcase different features using the CSS and JAVA technologies.  The Index page will be the starter page and all other pages can link from there.-->
+**The website that I created is for a fake real estate company.  I decided to do 5 different pages that will showcase different features using the CSS and JAVA technologies.  The Index page will be the starter page and all other pages can link from there.**
 
 ### CSS Features
 
